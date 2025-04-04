@@ -292,6 +292,7 @@ if (productosEnCarritoLS) {
 }
 
 function agregarAlCarrito(e) {
+  
 
     const idBoton = e.currentTarget.id;
     const productoAgregado = productos.find(producto => producto.id === idBoton);
@@ -307,6 +308,19 @@ function agregarAlCarrito(e) {
     actualizarNumerito();
     console.log(productosEnCarrito);
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+
+    Toastify({
+        text: "Producto Agregado",
+        duration: 3000,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+        background: "linear-gradient(to right,rgb(0, 83, 8),rgb(58, 164, 44))",
+        },
+        onClick: function(){} // Callback after click
+        }).showToast();
+
 }
 
 
@@ -314,12 +328,6 @@ function actualizarNumerito() {
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto)=> acc + producto.cantidad, 0);
     numerito.innerText = nuevoNumerito;
 }
-
-
-
-
-
-
 
 
 
