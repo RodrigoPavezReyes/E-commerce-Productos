@@ -71,6 +71,7 @@ aside{
     font-weight: 600;
     padding: 1rem;
     font-size: .85rem;
+    width: 100%;
 }
 
 .boton-menu.active {
