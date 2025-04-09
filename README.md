@@ -38,6 +38,7 @@ Este proyecto es una tienda online de ropa, donde se pueden agregar productos al
 
 ## 📸 Vista previa
 
+![screenshot png](https://github.com/user-attachments/assets/499609a2-130b-4427-afdc-7884cb70937c)
 
 (./img/screenshot.png) 
 
